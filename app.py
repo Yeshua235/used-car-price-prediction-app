@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from datetime import datetime
+from datetime import datetime, date
 import joblib
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -98,7 +98,7 @@ feature1 = st.selectbox('Brand', brands, placeholder="Select car Brand")
 
 model_feature = 'fill-up data'
 
-feature2 = st.date_input('Model Year', datetime.now(), min_value=datetime.date(1900, 1, 1), max_value=datetime.date.today()).year
+feature2 = st.date_input('Model Year', date.today(), min_value=date(1900, 1, 1), max_value=date.today()).year
 
 feature3 = st.number_input('What is the Milage of the car?', min_value=1, max_value=1000000, step=1, placeholder="Enter the milage in miles")
 
