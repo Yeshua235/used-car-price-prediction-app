@@ -22,7 +22,7 @@ The Used Car Price Prediction App is a machine learning-powered web application 
 ### Prerequisites
 
 - Python 3.11+
-- Required Python packages (see `environment.yml` or `requirements.txt`)
+- Required Python packages (`requirements.txt`)
 - Streamlit
 
 ### Installation
@@ -32,11 +32,6 @@ The Used Car Price Prediction App is a machine learning-powered web application 
    git clone https://github.com/Yeshua235/used-car-price-prediction.git
    ```
 2. Install dependencies:
-   ```sh
-   conda env create -f environment.yml
-   ```
-   or
-
    ```sh
    pip install -r requirements.txt
    ```
