@@ -136,4 +136,4 @@ if st.button("Predict"):
 
     prediction = model.predict(input_data)
 
-    st.success(f"Predicted Value: ${prediction[0]} ± $15,263.36")
+    st.success(f"Predicted Value: ${prediction[0]:,.2f} ± $15,263.36")
