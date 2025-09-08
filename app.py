@@ -136,4 +136,6 @@ if st.button("Predict"):
 
     prediction = model.predict(input_data)
 
-    st.success(f"Predicted Value: ${prediction[0]:,.2f} ± $15,263.36")
+    st.markdown(f"**Predicted Value:** <span style='white-space:nowrap;'>${prediction[0]:,.2f} ± $15,263.36</span>", unsafe_allow_html=True)
+
+    # st.success(f"Predicted Value: ${prediction[0]:,.2f} ± $15,263.36")
